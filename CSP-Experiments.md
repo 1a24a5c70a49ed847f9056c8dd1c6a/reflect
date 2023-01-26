@@ -1,4 +1,4 @@
-# Experinenting with CSP
+# Experimenting with CSP
 ## Basic CSP - script-src
 Headers:
 ```
