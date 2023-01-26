@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style/html-template.css">
-	<script src="js/client.js" defer></script>
-	<title>Reflect - HTML Template</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/html-template.css">
+  <script src="js/client.js" defer></script>
+  <title>Reflect - HTML Template</title>
 </head>
 <body>
-	<h1>Reflect - HTML Template</h1>
-	<form class="template-form" id="template-form">
-		<fieldset>
-			<div class="input-group">
-				<label class="form-label" id="form-label-targeturl">Traget URL:</label>
-				<input class="form-tf" id="from-tf-targeturl" placeholder="target URL" title="The URL to send the request to.">
-				<label class="from-label" id="form-label-statuscode">Status Code:</label>
-				<input class="form-tf" id="from-tf-statuscode" value="200" title="The status code to return." size="4">
-			</div>
-			<div class="input-group">
-				<input type="checkbox" id="form-cb-respheaders" title="The headers the server will set in its response (remember to set the Content-Type correctly).">Response Headers:</input>
-				<textarea class="form-ta" id="from-ta-respheaders" cols="4" placeholder="headers (one per line)"></textarea>
-			</div>
+  <h1>Reflect - HTML Template</h1>
+  <form class="template-form" id="template-form">
+    <fieldset>
+      <div class="input-group">
+        <label class="form-label" id="form-label-targeturl">Traget URL:</label>
+        <input class="form-tf" id="from-tf-targeturl" placeholder="target URL" title="The URL to send the request to.">
+        <label class="from-label" id="form-label-statuscode">Status Code:</label>
+        <input class="form-tf" id="from-tf-statuscode" value="200" title="The status code to return." size="4">
+      </div>
+      <div class="input-group">
+        <input type="checkbox" id="form-cb-respheaders" title="The headers the server will set in its response (remember to set the Content-Type correctly).">Response Headers:</input>
+        <textarea class="form-ta" id="from-ta-respheaders" cols="4" placeholder="headers (one per line)"></textarea>
+      </div>
 
-			<label>Body:</label><br>
+      <label>Body:</label><br>
  
-			<input type="radio" id="form-rb-body-empty" name="radio-body" value="Body: Empty" checked="checked">
-			<label for="form-rb-body-empty">Empty</label><br>
+      <input type="radio" id="form-rb-body-empty" name="radio-body" value="Body: Empty" checked="checked">
+      <label for="form-rb-body-empty">Empty</label><br>
 
-			<input type="radio" id="form-rb-body-string" name="radio-body" value="Body: String">
-			<label for="form-rb-body-string">String:</label><br>
-			<fieldset>
-				<textarea class="form-ta" id="from-ta-stringresp" cols="4" placeholder="string to return"></textarea>
-			</fieldset>
+      <input type="radio" id="form-rb-body-string" name="radio-body" value="Body: String">
+      <label for="form-rb-body-string">String:</label><br>
+      <fieldset>
+        <textarea class="form-ta" id="from-ta-stringresp" cols="4" placeholder="string to return"></textarea>
+      </fieldset>
 
 
-			<input type="radio" id="form-rb-body-html" name="radio-body" value="Body: HTML Document">
-			<label for="form-rb-body-html">HTML Document:</label><br>
-			<fieldset>
-			<div clajs="input-group">
-				<input type="checkbox" id="form-cb-htmlhead" title="Optionally include text in the head of the returned HTML document.">HTML Head Content:</input>
-				<textarea class="form-ta" id="form-ta-headcontent" cols="4" placeholder="content to insert into response HTML head"></textarea>
-			</div>
+      <input type="radio" id="form-rb-body-html" name="radio-body" value="Body: HTML Document">
+      <label for="form-rb-body-html">HTML Document:</label><br>
+      <fieldset>
+      <div clajs="input-group">
+        <input type="checkbox" id="form-cb-htmlhead" title="Optionally include text in the head of the returned HTML document.">HTML Head Content:</input>
+        <textarea class="form-ta" id="form-ta-headcontent" cols="4" placeholder="content to insert into response HTML head"></textarea>
+      </div>
 
-			<div class="input-group">
-				<input type="checkbox" id="form-cb-htmlbody" title="Optionally include text in the body of the returned HTML document.">HTML Body Content:</input>
-				<textarea class="form-ta" id="form-ta-bodycontent" cols="4" placeholder="content to insert into response HTML body"></textarea>
-			</div>
+      <div class="input-group">
+        <input type="checkbox" id="form-cb-htmlbody" title="Optionally include text in the body of the returned HTML document.">HTML Body Content:</input>
+        <textarea class="form-ta" id="form-ta-bodycontent" cols="4" placeholder="content to insert into response HTML body"></textarea>
+      </div>
 
-			<input type="checkbox" id="form-cb-inclreqheaders" title="Include the headers of the request in the body of the returned HTML document (they go before the content insertet into the body).">Include Request Headers in Response HTML Body</input>
-		</fieldset>
+      <input type="checkbox" id="form-cb-inclreqheaders" title="Include the headers of the request in the body of the returned HTML document (they go before the content insertet into the body).">Include Request Headers in Response HTML Body</input>
+    </fieldset>
 
-		<input type="checkbox" id="form-cb-defaultresp" title="Set as default response for the target URL and the specified method.">Set as Default Response for Method</input>
-		<select name="req-mehtod" id="from-select-defaultresp-method">
-			<option value="GET">GET</option>
-			<option value="HEAD">HEAD</option>
-			<option value="POST">POST</option>
-			<option value="OPTIONS">OPTIONS</option>
-			<option value="PUT">PUT</option>
-			<option value="DELETE">DELETE</option>
-			<option value="CONNECT">CONNECT</option>
-			<option value="TRACE">TRACE</option>
-			<option value="PATCH">PATCH</option>
-		</select>
+    <input type="checkbox" id="form-cb-defaultresp" title="Set as default response for the target URL and the specified method.">Set as Default Response for Method</input>
+    <select name="req-mehtod" id="from-select-defaultresp-method">
+      <option value="GET">GET</option>
+      <option value="HEAD">HEAD</option>
+      <option value="POST">POST</option>
+      <option value="OPTIONS">OPTIONS</option>
+      <option value="PUT">PUT</option>
+      <option value="DELETE">DELETE</option>
+      <option value="CONNECT">CONNECT</option>
+      <option value="TRACE">TRACE</option>
+      <option value="PATCH">PATCH</option>
+    </select>
 
-		</fieldset>
-		<fieldset>
-			<div class="action-group">
-				<button type="button" class="form-button" id="form-button-sendreq">Send Request</button>
-				<select name="req-mehtod" id="from-select-reqmethod">
-					<option value="GET">GET</option>
-					<option value="POST">POST</option>
-				</select>
-				<input type="checkbox" id="form-cb-openresp">Open Response</input>
-				<select name="open-opt" id="form-select-openopt">
-					<option value="new-wnd">in new Window</option>
-					<option value="this-wnd">in this Window</option>
-				</select>
-			</div>
-			<hr>
-			<div class="action-group">
-				<button type="button" class="form-button" id="form-button-genlink">Generate Link</button>
-				<a href="" class="form-link" id="anchor-genlink"></a>
-			</div>
-		</fieldset>
-	</form>
-	<div class="hidden">
-		<form name="sendform" id="sendform">
-			<input type="hidden" name="reflect" id="sendform-reflect">
-		</form>
-		<iframe name="iframe-dummy-target" id="dummy-target"><iframe>
-	</div>
+    </fieldset>
+    <fieldset>
+      <div class="action-group">
+        <button type="button" class="form-button" id="form-button-sendreq">Send Request</button>
+        <select name="req-mehtod" id="from-select-reqmethod">
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+        </select>
+        <input type="checkbox" id="form-cb-openresp">Open Response</input>
+        <select name="open-opt" id="form-select-openopt">
+          <option value="new-wnd">in new Window</option>
+          <option value="this-wnd">in this Window</option>
+        </select>
+      </div>
+      <hr>
+      <div class="action-group">
+        <button type="button" class="form-button" id="form-button-genlink">Generate Link</button>
+        <a href="" class="form-link" id="anchor-genlink"></a>
+      </div>
+    </fieldset>
+  </form>
+  <div class="hidden">
+    <form name="sendform" id="sendform">
+      <input type="hidden" name="reflect" id="sendform-reflect">
+    </form>
+    <iframe name="iframe-dummy-target" id="dummy-target"><iframe>
+  </div>
 </body>
 </html>
