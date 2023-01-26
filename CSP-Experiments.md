@@ -31,7 +31,7 @@ Result: inline script executes
 Headers:
 ```
 Content-Type: text/html
-Content-Security-Policy:  script-src 'self' 'sha256-6ZK6Eqp7qaAL9wUcEKuTHEEqS7g+TsVxR626DuBJHVI='
+Content-Security-Policy: script-src 'self' 'sha256-6ZK6Eqp7qaAL9wUcEKuTHEEqS7g+TsVxR626DuBJHVI='
 ```
 
 HTML Body:
