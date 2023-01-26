@@ -1,33 +1,33 @@
 .form-link {
-	display: inline-block;
-	word-break: break-word;
+  display: inline-block;
+  word-break: break-word;
 }
 
 .input-group {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .form-label {
-	display: block;
+  display: block;
 }
 
 .form-tf {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .form-ta {
-	width: 100%;
-	resize: vertical;
+  width: 100%;
+  resize: vertical;
 }
 
 .action-group {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
 
 #from-tf-targeturl {
-	width: 100%;
+  width: 100%;
 }
