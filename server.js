@@ -183,7 +183,6 @@ function toPairs(arr, trim, filter) {
       let val = arr[2 * i + 1];
       if (filter(key, val)) {
         if (trim) {
-          debugLog("trimming");
           key = key.trim();
           val = val.trim();
         }
