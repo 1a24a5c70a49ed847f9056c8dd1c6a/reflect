@@ -12,6 +12,17 @@ function debugLog(...args) {
   }
 }
 
+// seal the most important prototypes to harden against prototype pollution
+function sealProtos() {
+  Object.seal(Object.prototype);
+  Object.seal(String.prototype);
+  Object.seal(Array.prototype);
+  Object.seal(Number.prototype);
+  Object.seal(Boolean.prototype);
+  Object.seal(Function.prototype);
+  Object.seal(Symbol.prototype);
+}
+
 class ReflectParser {
   static generateFullReflect() {
     return {
@@ -362,6 +373,7 @@ function serveSite(req, res, siteContent, contentType = "text/plain") {
 }
 
 /* start the server */
+sealProtos();
 const fsPrefix = "client/";
 const pathHTML = "html-template.html";
 const pathCSS = "style/html-template.css";
